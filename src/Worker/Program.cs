@@ -5,13 +5,13 @@ namespace Worker
 {
     public class Program
     {
-        const string ApiBaseUrl = "http://localhost:55173";
-
         public static async Task Main(string[] args)
         {
-            Console.WriteLine($"Hello, I'm about to call {ApiBaseUrl}!");
+            var apiBaseUrl = Environment.GetEnvironmentVariable("API_BASE_URL");
 
-            var response = await ApiBaseUrl
+            Console.WriteLine($"HTTP GET {apiBaseUrl}/api/values");
+
+            var response = await apiBaseUrl
                 .AppendPathSegment("api")
                 .AppendPathSegment("values")
                 .GetJsonAsync<IEnumerable<string>>();
