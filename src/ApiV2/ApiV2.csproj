@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net48</TargetFramework>
+		<AssemblyName>ApiV2</AssemblyName>
+		<RootNamespace>ApiV2</RootNamespace>
+		<IsPackable>false</IsPackable>
+		<DebugType>full</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+		<LangVersion>7.1</LangVersion>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<OutputPath>bin\</OutputPath>
+	</PropertyGroup>
+
+	<!--Package References-->
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="9.0.0" />
+		<PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+		<PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+		<PackageReference Include="Microsoft.AspNet.WebApi.Owin" Version="5.2.7" />
+		<PackageReference Include="Microsoft.AspNet.WebApi.WebHost" Version="5.2.7" />
+		<PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
+		<PackageReference Include="Microsoft.Owin" Version="4.0.1" />
+		<PackageReference Include="Microsoft.Owin.Host.SystemWeb" Version="4.0.1" />
+		<PackageReference Include="Microsoft.Owin.Security" Version="4.0.1" />
+		<PackageReference Include="Microsoft.Owin.Security.Jwt" Version="4.0.1" />
+		<PackageReference Include="Microsoft.Owin.Security.OAuth" Version="4.0.1" />
+		<PackageReference Include="Microsoft.Web.Infrastructure" Version="1.0.0.0" />
+		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="5.4.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="OctoPack" Version="3.0.31" />
+		<PackageReference Include="Owin" Version="1.0" />
+		<PackageReference Include="StackExchange.Redis" Version="2.2.4" />
+		<PackageReference Include="StructureMap" Version="4.7.1" />
+		<PackageReference Include="structuremap.web" Version="4.0.0.315" />
+		<PackageReference Include="Swashbuckle.Core" Version="5.6.0" />
+		<PackageReference Include="System.Diagnostics.DiagnosticSource" Version="4.4.1.0" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.4.0" />
+		<PackageReference Include="WebActivatorEx" Version="2.0.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Web.config">
+			<SubType>Designer</SubType>
+		</Content>
+		<Content Include="Web.*.config">
+			<DependentUpon>Web.config</DependentUpon>
+			<SubType>Designer</SubType>
+		</Content>
+	</ItemGroup>
+
+	<!--Linked content-->
+	<ItemGroup>
+		<Reference Include="System.Web" />
+	</ItemGroup>
+</Project>

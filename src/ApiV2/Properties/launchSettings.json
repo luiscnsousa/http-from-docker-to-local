@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "ApiV2": {
+      "commandName": "Executable",
+      "executablePath": "c:\\program files (x86)\\IIS Express\\iisexpress.exe",
+      "commandLineArgs": "/path:\"$(SolutionDir)ApiV2\" /port:55173"
+    }
+  }
+}
