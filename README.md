@@ -15,7 +15,7 @@ Typically IIS Express only binds to localhost, and if the same request is made t
 
 To test this, simply run either Api or ApiV2, open a browser tab and go to http://localhost:55173/api/values or http://127.0.0.1:55173/api/values, both should work.
 
-The place where the bindings are being defined is in the following file, under <sites> element: 
+The place where the bindings are being defined is in the following file, under the element `<sites>`: 
 - src\\.vs\HttpFromDockerToLocal\config\applicationhost.config
 ```
             <site name="Api" id="2">
